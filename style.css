@@ -1,4 +1,55 @@
-*{
+* {
     font-family: iranYekan, sans-serif;
     box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    width: calc(100% - 140px);
+    margin-inline: auto;
+    height: 100%;
+    position: relative;
+}
+
+.top-header{
+    display: flex;
+    height: 70px;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid #F3F3F3;
+    box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.13);
+}
+
+.top-header .container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.profile {
+    cursor: pointer;
+    width: 50px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    border: 1px solid #cdcdcd;
+}
+
+main .container {
+    height: calc(100vh - 70px);
+}
+
+.section {
+    width: 100%;
+    height: 350px;
+    margin-inline: auto;
+    border-radius: 20px;
+    background: #223A66;
+    position: absolute;
+    bottom: 40px;
 }
