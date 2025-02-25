@@ -15,7 +15,7 @@ body {
     position: relative;
 }
 
-.top-header{
+.top-header {
     display: flex;
     height: 70px;
     justify-content: space-between;
@@ -24,11 +24,12 @@ body {
     box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.13);
 }
 
-.top-header .container{
+.top-header .container {
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
+
 .profile {
     cursor: pointer;
     width: 50px;
@@ -52,4 +53,53 @@ main .container {
     background: #223A66;
     position: absolute;
     bottom: 40px;
+}
+
+.doctor_img {
+    width: 116px;
+    border-radius: 50%;
+    position: absolute;
+    top: -60px;
+    right: 50%;
+    transform: translate(50%);
+}
+
+.doctor_box {
+    position: absolute;
+    top: -30%;
+    right: 50%;
+    transform: translate(50%);
+}
+
+.content {
+    padding-top: 68px;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    padding-inline: 20px;
+}
+
+.content > h2 {
+    padding: 0;
+    margin: 8px 0 0;
+    font-weight: normal;
+}
+
+.content span {
+    opacity: 0.4;
+    font-size: 13px;
+    padding: 0;
+    margin: 0;
+    display: block;
+}
+
+.content .stars {
+    margin-top: 10px;
+}
+
+.content p {
+    font-size: 15px;
+    margin-top: 10px;
 }
