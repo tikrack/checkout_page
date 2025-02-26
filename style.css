@@ -184,6 +184,59 @@ main .container {
     backdrop-filter: blur(1px);
 }
 
+.payModal {
+    display: none;
+    position: fixed;
+    top: 50%;
+    right: 50%;
+    transform: translate(50%, -50%);
+    background: white;
+    border-radius: 30px;
+    padding: 20px;
+    max-width: 800px;
+    width: 100%;
+}
+
+.payModal h1 {
+    padding: 0;
+    text-align: center;
+    margin: 0 0 10px;
+    font-size: 25px;
+}
+
+.wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    justify-content: center;
+    align-items: center;
+}
+
+.wrapper > div {
+    flex-basis: 49%;
+    border: 1px solid lightgray;
+    border-radius: 15px;
+    display: flex;
+    gap: 20px;
+    cursor: pointer;
+    padding: 10px;
+}
+
+
+.wrapper > div.active {
+    border: 1px solid darkblue;
+    box-shadow: -5px 5px 10px -9px darkblue;
+}
+
+.wrapper > div > p {
+    font-size: 14px;
+    color: #666666;
+}
+
+.wrapper > div > img {
+    object-fit: contain;
+}
+
 @media screen and (max-width: 992px) {
     .boxes {
         flex-direction: column;
