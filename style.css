@@ -43,7 +43,7 @@ body {
 
 main .container {
     height: calc(100vh - 70px);
-    margin-top: 17%;
+    margin-top: 50px;
 }
 
 .section {
@@ -51,9 +51,7 @@ main .container {
     margin-inline: auto;
     border-radius: 20px;
     background: #223A66;
-    position: absolute;
-    bottom: 40px;
-    padding: 225px 25px 25px;
+    padding: 25px;
 }
 
 .doctor_img {
@@ -66,10 +64,17 @@ main .container {
 }
 
 .doctor_box {
-    position: absolute;
-    top: -30%;
-    right: 50%;
-    transform: translate(50%);
+    position: relative;
+    width: 334px;
+    margin-inline: auto;
+    margin-top: 50px;
+    margin-bottom: 20px;
+    /*top: -30%;*/
+    /*right: 50%;*/
+    /*transform: translate(50%);*/
+    /*top: 0;*/
+    /*right: 50%;*/
+    /*transform: translate(50%);*/
 }
 
 .content {
@@ -128,6 +133,22 @@ main .container {
     padding-block: 5px;
 }
 
+.btn-custom {
+    display: flex;
+    width: 140px;
+    height: 50px;
+    padding: 10px;
+    justify-content: center;
+    align-items: center;
+    border-radius: 18px;
+    background: #E12454;
+    border: 0;
+    color: white;
+    font-size: 16px;
+    margin: 20px auto 0;
+    cursor: pointer;
+}
+
 @media screen and (max-width: 992px) {
     .boxes {
         flex-direction: column;
@@ -139,13 +160,5 @@ main .container {
 
     .container {
         width: calc(100% - 80px);
-    }
-
-    main .container {
-        margin-top: 50vw !important;
-    }
-
-    .section {
-        padding: 170px 25px 25px;
     }
 }
