@@ -43,16 +43,17 @@ body {
 
 main .container {
     height: calc(100vh - 70px);
+    margin-top: 17%;
 }
 
 .section {
     width: 100%;
-    height: 350px;
     margin-inline: auto;
     border-radius: 20px;
     background: #223A66;
     position: absolute;
     bottom: 40px;
+    padding: 225px 25px 25px;
 }
 
 .doctor_img {
@@ -102,4 +103,49 @@ main .container {
 .content p {
     font-size: 15px;
     margin-top: 10px;
+}
+
+.boxes {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+}
+
+.table_box {
+    width: 50%;
+    border-radius: 30px;
+    border: 2px solid #cdcdcd;
+    padding: 20px;
+    color: wheat;
+}
+
+.table_box > tbody > tr > td:last-child {
+    text-align: left;
+}
+
+.table_box > tbody > tr > td {
+    padding-block: 5px;
+}
+
+@media screen and (max-width: 992px) {
+    .boxes {
+        flex-direction: column;
+    }
+
+    .boxes > table {
+        width: 100%;
+    }
+
+    .container {
+        width: calc(100% - 80px);
+    }
+
+    main .container {
+        margin-top: 50vw !important;
+    }
+
+    .section {
+        padding: 170px 25px 25px;
+    }
 }
