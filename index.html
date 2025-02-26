@@ -138,7 +138,22 @@
 <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
 <script>
     $("#selectPay").click(function () {
-        console.log("ok")
+        $(".overlay").fadeToggle()
+        $(".payModal").fadeToggle()
+    })
+
+    $(".overlay").click(function () {
+        $(this).fadeToggle()
+    })
+
+    $(".wrapper > div").click(function () {
+        $(this).addClass("active")
+        $(this).siblings().removeClass("active")
+    })
+
+    $(".wrapper + button").click(function () {
+        $(".overlay").fadeToggle()
+        $(".payModal").fadeToggle()
     })
 </script>
 </body>
